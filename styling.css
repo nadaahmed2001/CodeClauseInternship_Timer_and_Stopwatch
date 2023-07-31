@@ -3,12 +3,10 @@
     padding: 0;
 }
 
-/* Clear the outline in the focus state */
 input:focus {
     outline: none;
 }
 
-/* Make the direction of the body -> column */
 body {
     display: flex;
     flex-direction: column;
@@ -51,6 +49,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
 .title {
     display: inline-block;
     margin: 20px;
@@ -103,22 +102,23 @@ button {
 }
 
 button#start {
-    background: #f15b74; 
+    background: #f15b74;
 }
 
 button#stop {
-    background: #69d2e7; 
+    background: #69d2e7;
 }
 
 button#reset {
     background: #ff9f1c;
 }
+
 button#start:hover {
-    background: #ffea00; 
+    background: #ffea00;
 }
 
 button#stop:hover {
-    background: #ffea00; 
+    background: #ffea00;
 }
 
 button#reset:hover {
