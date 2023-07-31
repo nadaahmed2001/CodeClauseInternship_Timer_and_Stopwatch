@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear the outline in the focus state */
+input:focus {
+    outline: none;
+}
+
+/* Make the direction of the body -> column */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    gap: 20px;
+}
+
+#img-container {
+    margin-bottom: 30px;
+}
+
+#clock-img {
+    width: 170px;
+}
+
+#time-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-item {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#title_container {
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 40px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.title.active {
+    background-color: rgb(255, 193, 7);
+    cursor: default;
+}
+
+.title:hover {
+    background-color: rgb(0, 86, 179);
+}
+
+input[type="number"] {
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    appearance: textfield;
+}
+
+#Buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    color: #fff;
+    /* background-color: #1dd1a1; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#start {
+    background: #f15b74; 
+}
+
+button#stop {
+    background: #69d2e7; 
+}
+
+button#reset {
+    background: #ff9f1c;
+}
+button#start:hover {
+    background: #ffea00; 
+}
+
+button#stop:hover {
+    background: #ffea00; 
+}
+
+button#reset:hover {
+    background: #ffea00;
+}
