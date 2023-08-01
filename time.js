@@ -64,8 +64,8 @@ function startStopwatch(startHour, startMinute, startSecond) {
 function switchToTimer() {
     isTimer = true;
     document.querySelector("#img-container").innerHTML = "<img src='images/clock.png' alt='clock' width='170px'>";
-    document.querySelector("#stopWatch").style.backgroundColor= "#007bff";
-    document.querySelector("#timer").style.backgroundColor=  "rgb(0, 86, 179)";
+    document.querySelector("#stopWatch").style.color = "#f5f4f1";
+    document.querySelector("#timer").style.color = "#000000";
     resetInputs();
     clearInterval(countDownInterval);
     remainingTime = null;
@@ -74,8 +74,8 @@ function switchToTimer() {
 function switchToStopwatch() {
     isTimer = false;
     document.querySelector("#img-container").innerHTML = "<img src='images/stopwatch2.png' alt='stopwatch' width='180px' height='170px'>";
-    document.querySelector("#stopWatch").style.backgroundColor= "rgb(0, 86, 179)";
-    document.querySelector("#timer").style.backgroundColor= "#007bff";
+    document.querySelector("#timer").style.color = "#f5f4f1";
+    document.querySelector("#stopWatch").style.color = "#000000";
     resetInputs();
     clearInterval(countDownInterval);
     remainingTime = null;

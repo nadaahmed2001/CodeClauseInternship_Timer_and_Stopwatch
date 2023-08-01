@@ -14,7 +14,11 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-image: url("./images/abstract-geometric-background-shapes-texture.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     gap: 20px;
 }
 
@@ -36,13 +40,14 @@ body {
 .time-item {
     flex: 0 0 calc(33.33% - 10px);
     margin: 5px;
-    background-color: #fff;
+    background-color: #0f1620;
     text-align: center;
     padding: 10px 0;
-    font-size: 24px;
+    /* font-size: 24px; */
     color: #333;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #e613fc;
 }
 
 #title_container {
@@ -55,8 +60,8 @@ body {
     margin: 20px;
     padding: 10px 40px;
     font-size: 24px;
-    color: #fff;
-    background-color: #007bff;
+    background-color: #a947ff;
+    color: #fffcfc;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -76,11 +81,14 @@ input[type="number"] {
     width: 60px;
     height: 40px;
     padding: 5px;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     border: none;
     border-radius: 5px;
     appearance: textfield;
+    color: #35b6f1;
+    background: none;
+    font-family: 'Digital Numbers', sans-serif;
 }
 
 #Buttons {
@@ -93,7 +101,7 @@ button {
     padding: 10px 20px;
     margin: 5px;
     font-size: 20px;
-    color: #fff;
+    color: #000000;
     /* background-color: #1dd1a1; */
     border: none;
     border-radius: 8px;
@@ -101,26 +109,22 @@ button {
     transition: background-color 0.3s ease-in-out;
 }
 
-button#start {
-    background: #f15b74;
-}
-
-button#stop {
-    background: #69d2e7;
-}
-
-button#reset {
-    background: #ff9f1c;
+button#start, button#stop, button#reset {
+    background: #35b6f1;
+    color:#fffcfc
 }
 
 button#start:hover {
-    background: #ffea00;
+    background: #f5f4f1;
+    color: #000000;
 }
 
 button#stop:hover {
-    background: #ffea00;
+    background: #f5f4f1;
+    color: #000000;
 }
 
 button#reset:hover {
-    background: #ffea00;
+    background: #f5f4f1;
+    color: #000000;
 }
